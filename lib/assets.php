@@ -121,7 +121,7 @@ function maera_customizer_live_preview() {
     wp_register_script( 'lessjs', MAERA_ASSETS_URL . '/js/less.min.js', 'lessjs-vars', null, false );
     wp_enqueue_script( 'lessjs' );
 
-    wp_enqueue_script('maera-customizer-live', get_template_directory_uri() . '/framework/' . $active_framework . '/assets/js/customizer.js', array('jquery', 'customize-preview', 'underscore'), '', true);
+    //wp_enqueue_script('maera-customizer-live', get_template_directory_uri() . '/framework/' . $active_framework . '/assets/js/customizer.js', array('jquery', 'customize-preview', 'underscore'), '', true);
 
     add_filter('style_loader_tag', 'less_tag_loader', 5, 2);
 

@@ -365,6 +365,7 @@ if ( ! class_exists( 'Maera_Framework_Bootstrap_Styles' ) ) {
 			if ( get_theme_mod( 'gradients_toggle', 0 ) ) {
 				$variables .= '@import "' . MAERA_FRAMEWORK_PATH . '/assets/less/gradients.less";';
 			}
+            //var_dump($variables);
 
 			return $variables;
 		}

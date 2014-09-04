@@ -10,7 +10,7 @@ function kirki_customizer_controls( $wp_customize ) {
 	if ( isset( $controls ) ) {
 		foreach ( $controls as $control ) {
             
-            $is_ajax = ($control['framework_var']) ? 'postMessage' : 'refresh';
+            $is_ajax = 'refresh';//($control['framework_var']) ? 'postMessage' : 'refresh';
 
 			if ( 'background' == $control['type'] ) {
 
